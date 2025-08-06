@@ -45,9 +45,9 @@ type Weather struct {
 // finally, read the response body and print it as a string
 func main() {
 	loc := "Pune" // You can change this to any location you want to query
-	if(len(os.Args)>=2){
-		loc=os.Args[1]
-	}
+	// if(len(os.Args)>=2){
+	// 	loc=os.Args[1]
+	// } You don't need this because, this line is used for taking input from the command line, but we are taking input from the user using fmt.Scanln
 
 	fmt.Print("Please enter a location: ")
 	fmt.Scanln(&loc)
